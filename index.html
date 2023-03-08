@@ -160,9 +160,12 @@
     </section>
     <section id="form" class="mt-48 flex flex-col justify-center items-center">
         <div class="block max-w-md rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
-            <form>
+            <form  action="https://formsubmit.co/alex@alexbastin.com" method="POST">
+                <input type="hidden" name="_next" value="https://chat.openai.com/chat">
+                <input type="hidden" name="_captcha" value="false">
                 <div class="relative mb-6">
                     <input type="text"
+                        name = "name"
                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                         id="exampleInput7" placeholder="Name" />
                     <label for="exampleInput7"
@@ -170,7 +173,7 @@
                     </label>
                 </div>
                 <div class="relative mb-6" >
-                    <input type="email"
+                    <input type="email" name = "email"
                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                         id="exampleInput8" placeholder="Email address" />
                     <label for="exampleInput8"
@@ -180,6 +183,7 @@
                 </div>
                 <div class="relative mb-6">
                     <textarea
+                        name = "message"
                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                         id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                     <label for="exampleFormControlTextarea13"
